@@ -1,0 +1,14 @@
+
+    <div>
+        <a href="{{ file.file.url }}">{{ file.name }}</a>
+        <p>Upvotes: {{ file.upvotes }}</p>
+        <p>Downvotes: {{ file.downvotes }}</p>
+        <form method="POST" action="{% url 'upvote_file' file.id %}">
+            {% csrf_token %}
+            <button type="submit">Upvote</button>
+        </form>
+        <form method="POST" action="{% url 'downvote_file' file.id %}">
+            {% csrf_token %}
+            <button type="submit">Downvote</button>
+        </form>
+    </div>

@@ -1,0 +1,104 @@
+
+{{semesters}}
+
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Dependent Dropdowns</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <form method="post">
+    {% csrf_token %}
+    <label for="faculty">Faculty:</label>
+    <select id="faculty" name="faculty">
+      <option value="">Select a faculty</option>
+      {% for faculty in faculties %}
+        <option value="{{ faculty.id }}" {% if selected_faculty_id == faculty.id %}selected{% endif %}>{{ faculty.name }}</option>
+      {% endfor %}
+    </select>
+    <br>
+
+    <label for="semester">Semester:</label>
+    <select id="semester" name="semester">
+      <option value="">Select a semester</option>
+      {% for semester in semesters %}
+        <option value="{{ semester.semester }}" {% if selected_semester == semester.semester %}selected{% endif %}>{{ semester.semester }}</option>
+      {% endfor %}
+    </select>
+    <br>
+
+    <label for="subject">Subject:</label>
+    <select id="subject" name="subject">
+      <option value="">Select a subject</option>
+      {% for subject in subjects %}
+        <option value="{{ subject.subjectfaculty.id }}" {% if selected_subject == subject.subjectfaculty.id %}selected{% endif %}>{{ subject.name }}</option>
+      {% endfor %}
+    </select>
+    <br>
+
+    <label for="name">Name:</label>
+    <input type="text" name="name" required>
+    <br>
+
+    <label for="owner">Owner:</label>
+    <input type="text" name="owner" required>
+    <br>
+
+    <label for="pdf">PDF:</label>
+    <input type="file" name="pdf" required>
+    <br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    $(document).ready(function() {
+      $('#faculty').change(function() {
+        var faculty_id = $(this).val();
+        $.ajax({
+          url: '/get_semesters/',
+          data: {
+            'faculty_id': faculty_id
+          },
+          dataType: 'json',
+          success: function(data) {
+            let semester_list=(data.semesters);
+            var options = '<option value="">Select a semester</option>';
+            for (var i = 0; i < semester_list.length; i++) {
+              options += '<option value="' + semester_list[i].id + '">' + semester_list[i].name + '</option>';
+            }
+            $('#semester').html(options);
+            $('#subject').html('<option value="">Select a subject</option>');
+          }
+        });
+      });
+
+      $('#semester').change(function() {
+        var faculty_id = $('#faculty').val();
+        var semester = $(this).val();
+        console.log(semester);
+        $.ajax({
+          url: '/test/',
+          data: {
+            'faculty_id': faculty_id,
+            'semester': semester
+          },
+          dataType: 'json',
+          success: function(data) {
+
+            let subject_list=(data.subjects);
+            var options = '<option value="">Select a subject</option>';
+            for (var i = 0; i < subject_list.length; i++) {
+              options += '<option value="' + subject_list[i].id + '">' + subject_list[i].name + '</option>';
+            }
+            
+            $('#subject').html(options);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

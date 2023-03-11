@@ -1,0 +1,9 @@
+{% extends "myupload.html" %}
+
+{% block content %}
+<a  class="btn btn-sm btn-success" href="{% url 'Chemistry1' %}" style="padding: 8px; float: right; background-color: green; color: white;">Back</a>
+{% endblock content %}
+
+{% block upload %}
+<form action="{% url 'ChemistryUpload' %}" method="POST" enctype="multipart/form-data"> 
+{% endblock upload %}

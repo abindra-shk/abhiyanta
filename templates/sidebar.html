@@ -1,0 +1,1347 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Abhiyanta</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/nlogo.png' %}" rel="icon">
+  <link href="{% static 'sassets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'sassets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'sassets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'sassets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'sassets/vendor/quill/quill.snow.css' %}" rel="stylesheet">
+  <link href="{% static 'sassets/vendor/quill/quill.bubble.css' %}" rel="stylesheet">
+  <link href="{% static 'sassets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'sassets/vendor/simple-datatables/sidebarstyle.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'sassets/css/sidebarstyle.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin - v2.5.0
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="/" class="logo d-flex align-items-center">
+        <img src="{% static 'assets/img/nlogo.png' %}" alt="">
+        <h1><span>Abhiyanta.</span></h1>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+        <a href="/">Home</a>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-home"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-primary badge-number">3</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="{% static 'sassets/img/messages-1.jpg' %}" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="{% static 'sassets/img/messages-2.jpg' %}" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="{% static 'sassets/img/messages-3.jpg' %}" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li>
+        <li><a href="login" class="get-started-btn scrollto">Login</a></li><!-- End Messages Nav -->
+
+        <!-- <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="{% static 'sassets/img/profile-img.png' %}" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Username</span>
+          </a>End Profile Image Icon -->
+
+          <!-- <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>person</h6>
+              <span>user</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul>End Profile Dropdown Items -->
+        <!-- </li>End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#computer-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-laptop"></i>Computer Engineering<i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="computer-nav" class="nav-content collapse ">
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bctone-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>First Semester
+            </a>
+            <ul id="bctone-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Physics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Applied Mechanics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math I
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Computer Programming
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bcttwo-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Second Semester
+            </a>
+            <ul id="bcttwo-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Chemistry
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math II
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Basic Electronics Engineering
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bctthree-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Third Semester
+            </a>
+            <ul id="bctthree-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math III
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Electric Circuit Theory
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Digital Logic
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bctfour-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Fourth Semester
+            </a>
+            <ul id="bctfour-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Numerical Methods
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Electric Machine
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Instrumentation I
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bctfive-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Fifth Semester
+            </a>
+            <ul id="bctfive-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Communication English
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Software Engineering
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Instrumentation II
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bctsix-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Sixth Semester
+            </a>
+            <ul id="bctsix-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Engineering Economics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Artificial Intelligence
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Operating System
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bctseven-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Seventh Semester
+            </a>
+            <ul id="bctseven-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Distributed Systems
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Computer Networks and Security
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Digital Signal Analysis and Processing
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bcteight-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Eighth Semester
+            </a>
+            <ul id="bcteight-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Information System
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Internet and Intranet
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Simulation and Modeling
+              </a>
+            </ul>
+          </li>
+        </ul>
+      </li><!-- End Components Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#electronics-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-cpu"></i><span>Electronics Engineering</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="electronics-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bexone-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>First Semester
+            </a>
+            <ul id="bexone-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Physics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Applied Mechanics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math I
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Computer Programming
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bextwo-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Second Semester
+            </a>
+            <ul id="bextwo-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Thermodynamics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Chemistry
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math II
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bexthree-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Third Semester
+            </a>
+            <ul id="bexthree-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Electric Circuit Theory
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Digital Logic
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math III
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bexfour-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Fourth Semester
+            </a>
+            <ul id="bexfour-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Instrumentation I
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Power System
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Numerical Methods
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bexfive-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Fifth Semester
+            </a>
+            <ul id="bexfive-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Communication English
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Control System
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Instrumentation II
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bexsix-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Sixth Semester
+            </a>
+            <ul id="bexsix-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Engineering Economics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Signal Analysis
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Computer Networks
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bexseven-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Seventh Semester
+            </a>
+            <ul id="bexseven-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Project Management
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Telecommuncation
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Filter Design
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bexeight-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Eighth Semester
+            </a>
+            <ul id="bexeight-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Engineering Professional Practice
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Digital Signal Processing
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Wireless Communication
+              </a>
+
+            </ul>
+          </li>
+        </ul>
+      </li><!-- End Forms Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#civil-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-bricks"></i><span>Civil Engineering</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="civil-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bceone-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>First Semester
+            </a>
+            <ul id="bceone-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Chemistry
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Computer Programming
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math I
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bcetwo-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Second Semester
+            </a>
+            <ul id="bcetwo-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Physics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Applied Mechanics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math II
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bcethree-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Third Semester
+            </a>
+            <ul id="bcethree-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Civil Engineering Materials
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Fluid Mechanics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math III
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bcefour-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Fourth Semester
+            </a>
+            <ul id="bcefour-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Hydraulics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Theory of Structures I
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Building Drawing
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bcefive-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Fifth Semester
+            </a>
+            <ul id="bcefive-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Theory of Structures II
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Water Supply Engineering
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Engineering Hydrology
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bcesix-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Sixth Semester
+            </a>
+            <ul id="bcesix-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Communication English
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Engineering Economics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Building Technology
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bceseven-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Seventh Semester
+            </a>
+            <ul id="bceseven-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Hydropower Engineering
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Estimating and Costing
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Project Engineering
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bceeight-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Eighth Semester
+            </a>
+            <ul id="bceeight-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Construction Management
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Engineering Professional Practice
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Technology Environment and Society
+              </a>
+
+            </ul>
+          </li>
+        </ul>
+      </li><!-- End Tables Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#electrical-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-lightning-charge"></i><span>Electrical Engineering</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="electrical-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#belone-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>First Semester
+            </a>
+            <ul id="belone-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Physics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Applied Mechanics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math I
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#beltwo-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Second Semester
+            </a>
+            <ul id="beltwo-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Basic Electronics Engineering
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Chemistry
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math II
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#belthree-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Third Semester
+            </a>
+            <ul id="belthree-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math III
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Electric Circuit Theory
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Digital Logic
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#belfour-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Fourth Semester
+            </a>
+            <ul id="belfour-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Electric Machine
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Microprocessor
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Instrumentation I
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#belfive-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Fifth Semester
+            </a>
+            <ul id="belfive-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Communication English
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Electrical Machine Design
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Instrumentation II
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#belsix-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Sixth Semester
+            </a>
+            <ul id="belsix-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Engineering Economics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Digital Control System
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Signal Analysis
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#belseven-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Seventh Semester
+            </a>
+            <ul id="belseven-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Project Engineering
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Organization and Management
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Power Electronics
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#beleight-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Eighth Semester
+            </a>
+            <ul id="beleight-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Engineering Professional Practice
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>High Voltage Engineering
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Power Plant Design
+              </a>
+
+            </ul>
+          </li>
+        </ul>
+      </li><!-- End Charts Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#architecture-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-building"></i><span>Architecture</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="architecture-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#barchone-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>First Semester
+            </a>
+            <ul id="barchone-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Building Materials
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Applied Mechanics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math I
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#barchtwo-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Second Semester
+            </a>
+            <ul id="barchtwo-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Drafting II
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Basic Design II
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math II
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#barchthree-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Third Semester
+            </a>
+            <ul id="barchthree-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Design Studio III
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Building Materials II
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Building Science II
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#barchfour-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Fourth Semester
+            </a>
+            <ul id="barchfour-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Design Studio IV
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Building Service I
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Building Construction III
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#barchfive-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Fifth Semester
+            </a>
+            <ul id="barchfive-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Design Studio V
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Building Services II
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Building Construction IV
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#barchsix-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Sixth Semester
+            </a>
+            <ul id="barchsix-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Sociology/Economics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Design Studio VI
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Working Drawings
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#barchseven-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Seventh Semester
+            </a>
+            <ul id="barchseven-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Practicum
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#barcheight-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Eighth Semester
+            </a>
+            <ul id="barcheight-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Design Studio VII
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Building Science III
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Architecture Conservation
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#barchnine-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Ninth Semester
+            </a>
+            <ul id="barchnine-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Design Studio VIII
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Building Construction V
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Construction Management
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#barchten-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Tenth Semester
+            </a>
+            <ul id="barchten-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Professional Practice
+              </a>
+            </ul>
+          </li>
+        </ul>
+      </li><!-- End Icons Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#mechanical-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-wrench-adjustable"></i><span>Mechanical Engineering</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="mechanical-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bmeone-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>First Semester
+            </a>
+            <ul id="bmeone-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Chemistry
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Computer Programming
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math I
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bmetwo-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Second Semester
+            </a>
+            <ul id="bmetwo-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Basic Electrical Engineering
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Basic Electronics Engineering
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math II
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bmethree-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Third Semester
+            </a>
+            <ul id="bmethree-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Metrology
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Electromagnetism
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Math III
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bmefour-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Fourth Semester
+            </a>
+            <ul id="bmefour-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Probability and Statistics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Electrical Machine
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Fluid Mechanics
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bmefive-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Fifth Semester
+            </a>
+            <ul id="bmefive-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Numerical Methods
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Control System
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Fluid Machines
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bmesix-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Sixth Semester
+            </a>
+            <ul id="bmesix-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Communication English
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Machine Design I
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Energy Resources
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bmeseven-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Seventh Semester
+            </a>
+            <ul id="bmeseven-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Machine Design II
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Engineering Economics
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Turbo Machines
+              </a>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link collapsed" data-bs-target="#bmeeight-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-circle"></i>Eighth Semester
+            </a>
+            <ul id="bmeeight-nav" class="nav-content collapse">
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Project Engineering
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Finite Element Method
+              </a>
+              <a href="components-accordion.html">
+                <i class="bi bi-dash"></i>Engineering Professional Practice
+              </a>
+
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-heading">Pages</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="users-profile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-faq.html">
+          <i class="bi bi-question-circle"></i>
+          <span>F.A.Q</span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-contact.html">
+          <i class="bi bi-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-register.html">
+          <i class="bi bi-card-list"></i>
+          <span>Register</span>
+        </a>
+      </li><!-- End Register Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-login.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+      </li><!-- End Login Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-error-404.html">
+          <i class="bi bi-dash-circle"></i>
+          <span>Error 404</span>
+        </a>
+      </li><!-- End Error 404 Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-blank.html">
+          <i class="bi bi-file-earmark"></i>
+          <span>Blank</span>
+        </a>
+      </li><!-- End Blank Page Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" type="text/css" href="{% static 'comment/vendor/bootstrap/four/css/bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'comment/vendor/bootstrap/three/css/bootstrap.min.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'comment/css/comment.css' %}">
+
+<body>
+<main id="main" class="main">
+                <div class="card-body">
+
+            <!-- Breadcrumbs-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#"></a>
+                    {% block content %}
+                    
+                    {% endblock content %}
+                </li>
+            </ol>
+             {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }} alert-dismissible" role="alert">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+            <div class="card mb-3">
+                <div class="card-header text-primary">
+               <i class="fas fa-truck text-secondary"></i>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>File Name</th>
+                                <th>Owner</th>
+                                <th>View</th>
+                                <th>Download</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+
+                            	<!-- if and for loop -->
+                            	{% if files %}
+                            	  {% for file in files %}
+
+                        
+                                <tr>
+                                    <td>{{ forloop.counter }}</td>
+
+                                    
+                                   <!-- filename and owner -->
+                                    <td>{{ file.name }}</td>
+                                    <td>{{ file.owner }}</td>
+                                     <td>
+
+                                    {% if file.pdf %}
+                                      <a href="{{ file.pdf.url }}" class="btn btn-outline-primary" target="_blank">
+                                    View PDF</a>
+                                    {% else %}
+                                    <span class="text-muted">No PDF</span>
+                                    {% endif %}
+                                  </td>
+
+                                  <td>
+                                    {% if file.pdf %}
+                                      <a href="{{ file.pdf.url }}" download class="btn btn-outline-success">
+                                    Download PDF</a>
+                                    {% else %}
+                                    <span class="text-muted">No PDF</span>
+                                    {% endif %}
+                                  </td> 
+                                </tr>
+
+                                <!-- end for and if -->
+                                {% endfor %}
+                                {% endif %}
+                            </tbody>
+                        </table>
+
+
+
+
+                          {% if is_paginated %}
+  <ul class="pagination">
+    {% if page_obj.has_previous %}
+      <li><a href="?page={{ page_obj.previous_page_number }}">&laquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&laquo;</span></li>
+    {% endif %}
+    {% for i in paginator.page_range %}
+      {% if page_obj.number == i %}
+        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+      {% else %}
+        <li><a href="?page={{ i }}">{{ i }}</a></li>
+      {% endif %}
+    {% endfor %}
+    {% if page_obj.has_next %}
+      <li><a href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&raquo;</span></li>
+    {% endif %}
+  </ul>
+{% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+     </main>        
+  
+  
+    <script type="text/javascript" src="{% static 'js/jquery-2.1.3.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.dataTables.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+
+
+</html>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'sassets/vendor/apexcharts/apexcharts.min.js'%}"></script>
+  <script src="{% static 'sassets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'sassets/vendor/chart.js/chart.umd.js' %}"></script>
+  <script src="{% static 'sassets/vendor/echarts/echarts.min.js' %}"></script>
+  <script src="{% static 'sassets/vendor/quill/quill.min.js' %}"></script>
+  <script src="{% static 'sassets/vendor/simple-datatables/simple-datatables.js' %}"></script>
+  <script src="{% static 'sassets/vendor/tinymce/tinymce.min.js' %}"></script>
+  <script src="{% static 'sassets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'sassets/js/main.js' %}"></script>
+
+</body>
+
+</html>
